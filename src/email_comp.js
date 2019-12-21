@@ -20,7 +20,7 @@ class Email extends React.Component {
 
   mySubmitHandler = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:8000/email/', {'email': this.state.mail})
+    axios.post('http://137.74.198.167/email/', {'email': this.state.mail})
       .then(res => {
         console.log(res.data);
       })
